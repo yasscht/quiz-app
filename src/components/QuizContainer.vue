@@ -43,15 +43,13 @@ export default {
   name: "QuizContainer",
   components: { Answer, Question, Stepper, Counter },
 
-  computed: mapGetters(["getData", "getCurrent", "getScore"]),
+  computed: mapGetters(["getData", "getCurrent"]),
   data: function () {
     return {
       currentQuestion: this.getData[this.getCurrent],
     };
   },
-  created() {
-    //console.log("n",this.getData);
-  },
+
   methods: {
     ...mapActions(["increment", "resetCounter"]),
     next() {

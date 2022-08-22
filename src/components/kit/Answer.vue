@@ -31,7 +31,7 @@ export default{
   addScore:function(isCorrect,id){
     this.activeProjectId = id
     isCorrect?this.incrementScore():null
-    console.log(isCorrect,this.getScore);
+   
     
   }
   }
