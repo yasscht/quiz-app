@@ -1,6 +1,6 @@
 <template>
 <div class="flex flex-col items-center border-2 border-black w-10/12 mx-auto py-20 space-y-9 text-lg">
-    <div class="w-3/5">
+    <div class="w-4/5 text-gray-400">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi dolorem quas dicta facere, quos veritatis, dolore, esse cumque nisi quod. Laborum officia vitae ea quidem vel assumenda rem sapiente.
     </div>
 
