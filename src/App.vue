@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <QuizContainer v-if="getCurrent<5" />
+    <Result v-else/>
+
   </div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import QuizContainer from "./components/QuizContainer.vue"
+import Result from "./components/Result.vue";
+import { mapGetters } from "vuex";
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+ 
+    QuizContainer,
+    Result
+
+  },
+  computed:mapGetters(['getCurrent'])
 }
 </script>
 
